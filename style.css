@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light gray background */
+    margin: 0;
+}
+
+.main {
+    margin: auto;
+    width: 400px; /* Adjust the width of the calculator */
+    padding: 20px;
+    background-color: #fff; /* White background for calculator */
+    border: 2px solid #ccc; /* Darker border for calculator */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+input[type="text"], input[type="submit"], button {
+    width: 60px; /* Standard width for buttons */
+    height: 60px; /* Standard height for buttons */
+    font-size: 18px;
+    margin: 5px;
+    padding: 10px;
+    border: none; /* Remove borders from buttons and input */   
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: gray; /* Background color same as body */
+}
+
+input[type="text"] {
+    width: calc(100% - 20px); /* Adjusted width to accommodate padding */
+    font-size: 18px;
+    padding: 15px 10px; /* Increased padding for better spacing */
+    margin-bottom: 10px;
+    border: none; /* Remove border from input field */
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: right; /* Align text to the right for numerical input */
+    outline: none; /* Remove outline when focused */
+    transition: border-color 0.2s ease-in-out; /* Smooth transition for border color */
+}
+
+input[type="text"]:focus {
+    border-color: #007bff; /* Change border color on focus for better visibility */
+}
+
+input[type="submit"]:hover, button:hover {
+    background-color: #007bff; /* Blue color for hover state */
+    color: white;
+}
+
+button {
+    background-color: #28a745; /* Green color for operator buttons */
+    width: 100%; /* Full width for operator buttons */
+}
+
+input[type="submit"][name="equal"] {
+    background-color: #dc3545; /* Red color for equal button */
+}
+
+table {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    border-collapse: collapse; /* Collapse borders between table cells */
+}
+
+table td {
+    padding: 5px;
+    border: none; /* Remove borders from table cells */
+}
+
+#op {
+    background-color: skyblue;
+}
+
+#c { 
+    background-color: green;
+    color: white;
+}
+
+#red {
+    background-color: red;
+    color: #f8f9fa;
+}
